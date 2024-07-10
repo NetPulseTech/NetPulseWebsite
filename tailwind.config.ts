@@ -9,10 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textColor: {
+        "custom-dark": "rgba(20, 12, 31, 1)",
+      },
+      backgroundColor: {
+        "custom-green": "#96ea63",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "custom-radial-gradient":
+          "radial-gradient(50% 50% at 50% 50%, rgba(173, 26, 175, 0.3) 0%, rgba(20, 12, 31, 1) 100%)",
+        "custom-linear-gradient":
+          "linear-gradient(90deg, #794AB9 0%, #F81DFB 100%)",
       },
     },
   },
