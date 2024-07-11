@@ -8,29 +8,72 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="container text-center mt-8 mx-auto sm:p-5">
-      <div className="sm:flex sm:justify-between sm:items-center sm:gap-5">
+    <footer className="text-center mt-8 sm:p-5 lg:mt-[7.5rem] lg:p-10 sm:border-t-[1px] sm:border-white/10">
+      <div className="container sm:flex sm:justify-between sm:items-center sm:gap-5 lg:gap-6 mx-auto">
         <ul className="flex justify-center items-center gap-4 py-7 border-y-[1px] border-white/10 sm:order-2 sm:border-0">
           <li>
             <a href="#">
-              <Image src={TelegramImg} width={56} alt="telegram logo" />
+              <Image
+                src={TelegramImg}
+                width={56}
+                alt="telegram logo"
+                className="lg:hidden"
+              />
+
+              <Image
+                src={TelegramImg}
+                width={64}
+                alt="telegram logo"
+                className="hidden lg:block"
+              />
             </a>
           </li>
           <li>
             <a href="#">
-              <Image src={DiscordImg} width={56} alt="discord logo" />
+              <Image
+                src={DiscordImg}
+                width={56}
+                alt="discord logo"
+                className="lg:hidden"
+              />
+
+              <Image
+                src={DiscordImg}
+                width={64}
+                alt="discord logo"
+                className="hidden lg:block"
+              />
             </a>
           </li>
           <li>
             <a href="#">
-              <Image src={InstagramImg} width={56} alt="instagram logo" />
+              <Image
+                src={InstagramImg}
+                width={56}
+                alt="instagram logo"
+                className="lg:hidden"
+              />
+
+              <Image
+                src={InstagramImg}
+                width={64}
+                alt="instagram logo"
+                className="hidden lg:block"
+              />
             </a>
           </li>
         </ul>
 
-        <div className="sm:flex sm:order-1 sm:items-center sm: gap-4">
+        <div className="sm:flex sm:order-1 sm:items-center sm: gap-4 lg:gap-6">
           <div className="hidden sm:block">
-            <Image src={LogoImg} width={60} alt="logo" />
+            <Image src={LogoImg} width={60} alt="logo" className="lg:hidden" />
+
+            <Image
+              src={LogoImg}
+              width={96}
+              alt="logo"
+              className="hidden lg:block"
+            />
           </div>
 
           <p className="font-normal text-sm py-[0.875rem]">{`© ${currentYear} Netpulse.com All rights reserved`}</p>
