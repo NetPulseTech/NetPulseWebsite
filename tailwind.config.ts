@@ -20,6 +20,8 @@ const config: Config = {
         dots: "url('/images/dots-background.svg')",
         "custom-radial-gradient":
           "radial-gradient(50% 50% at 50% 50%, rgba(172, 26, 175, 0.3) 0%, rgba(20, 12, 31, 0.6) 100%)",
+        "custom-radial-gradient-large":
+          "radial-gradient(50% 50% at 50% 50%, rgba(172, 26, 175, 0.3) 0%, rgba(20, 12, 31, 0.2) 100%)",
         "custom-linear-gradient":
           "linear-gradient(90deg, #794AB9 0%, #F81DFB 100%)",
       },

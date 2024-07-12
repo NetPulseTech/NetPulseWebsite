@@ -10,7 +10,7 @@ import CharacterImg from "@/images/character.svg";
 import CharacterLargeImg from "@/images/character-large.svg";
 import CircleImg from "@/images/circle.svg";
 import CircleLargeImg from "@/images/circle-large.svg";
-import DotsBgImg from "@/images/dots-background.svg";
+import StarsBgImg from "@/images/stars-background.svg";
 import RightArrowImg from "@/images/right-arrow-icon.svg";
 import { Rajdhani } from "next/font/google";
 
@@ -25,7 +25,7 @@ const Main = () => {
       >
         <div className="hidden md:block absolute md:top-[-100px] lg:top-[-180px] inset-x-0 mx-auto md:bg-custom-pink/60 lg:bg-custom-pink/70 md:blur-[200px] lg:blur-[300px] aspect-square md:h-[250px] lg:h-[360px]"></div>
 
-        <div className="flex flex-col justify-center items-center w-[284px] aspect-square backdrop-blur-md bg-custom-radial-gradient rounded-full flex-shrink-0 md:w-[435px] lg:w-[525px] lg:mt-10">
+        <div className="flex flex-col justify-center items-center w-[284px] aspect-square backdrop-blur-md bg-custom-radial-gradient rounded-full flex-shrink-0 md:w-[435px] lg:w-[525px] lg:mt-10 lg:bg-custom-radial-gradient-large">
           <div className="mb-3 lg:mb-6">
             <Image
               src={NetPulseImg}
@@ -168,7 +168,15 @@ const Main = () => {
         </ul>
       </section>
 
-      <section id="benefits" className="w-full text-center">
+      <section id="benefits" className="relative w-full text-center">
+        <div className="hidden lg:block absolute top-[18%] inset-x-0 mx-auto">
+          <Image
+            src={StarsBgImg}
+            alt="stars and planets background"
+            className="mx-auto"
+          />
+        </div>
+
         <h2 className="font-bold text-[1.75rem] mb-6 lg:font-extrabold lg:text-[2.75rem] lg:mb-10">
           What is our benefit?
         </h2>
@@ -186,12 +194,9 @@ const Main = () => {
           both you and we become stronger, this is a win-win game.
         </p>
 
-        <div
-          className="mb-12 pt-12
- lg:pt-[11.5rem] overflow-hidden"
-        >
+        <div className="mb-12 pt-12 lg:pt-20 overflow-hidden">
           <div className="relative border-b-2 border-white/10">
-            <div className="absolute inset-x-0 top-[90%] sm:top-2/3 mx-auto -z-10 bg-custom-pink/60 blur-[150px] md:blur-[180px] md:bg-custom-pink/70 aspect-square h-[180px] md:h-[250px] lg:h-[350px] lg:blur-[300px] lg:bg-custom-pink/80"></div>
+            <div className="absolute inset-x-0 top-[90%] sm:top-2/3 mx-auto -z-10 bg-custom-pink/60 blur-[150px] md:blur-[180px] md:bg-custom-pink/70 aspect-square h-[180px] md:h-[250px] lg:h-[350px] lg:blur-[210px]"></div>
 
             <Image
               src={CharacterImg}
