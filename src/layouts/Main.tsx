@@ -21,16 +21,9 @@ const Main = () => {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <section
         id="home"
-        className="relative w-full flex flex-col justify-center items-center h-[78vh] text-center mb-14 bg-dotss bg-center bg-no-repeat"
-        style={{
-          backgroundSize: "60%",
-        }}
+        className="dots-background-settings relative w-full flex flex-col justify-center items-center h-[30.25rem] text-center mb-14 pt-20 bg-dots bg-bottom bg-no-repeat md:h-[48rem] lg:h-[56rem]"
       >
-        {/* <div className="absolute left-0 top-0 -z-10">
-          <Image src={DotsBgImg} alt="background" className="max-w-full" />
-        </div> */}
-
-        <div className="flex flex-col justify-center items-center dbackdrop-blur-sm dbg-custom-radial-gradient rounded-full flex-shrink-0">
+        <div className="flex flex-col justify-center items-center w-[284px] aspect-square backdrop-blur-md bg-custom-radial-gradient rounded-full flex-shrink-0 md:w-[435px] lg:w-[525px] lg:mt-10">
           <div className="mb-3 lg:mb-6">
             <Image
               src={NetPulseImg}
@@ -63,7 +56,7 @@ const Main = () => {
 
       <section
         id="services"
-        className="min-w-[22.875rem] text-center mb-20 lg:px-6 lg:w-full lg:mb-40 2xl:container"
+        className="px-2 sm:px-0 sm:min-w-[22.875rem] text-center mb-20 lg:px-6 lg:w-full lg:mb-40 2xl:container"
       >
         <h2 className="font-bold text-[1.75rem] mb-14 lg:text-[2.75rem]">
           How do you work

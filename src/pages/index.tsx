@@ -7,7 +7,7 @@ const onest = Onest({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className={onest.className}>
+    <div className={`overflow-x-hidden ${onest.className}`}>
       <Header />
       <Main />
       <Footer />

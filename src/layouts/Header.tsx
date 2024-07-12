@@ -70,13 +70,13 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={` sticky top-0 p-5 z-10 mx-auto transition-colors border-b-[1px] duration-300 ${isScrolled ? " border-white/10 bg-custom-dark" : "border-custom-dark "}`}
+      className={`fixed inset-x-0 top-0 p-5 z-10 mx-auto transition-colors border-b-[1px] duration-300 ${isScrolled ? " border-white/10 bg-custom-dark" : "border-custom-dark"}`}
     >
       <div
-        className={`container mx-auto flex justify-between items-center gap-3 transition-[height] duration-300 ${isScrolled ? "md:h-[64px]" : "md:h-[96px]"}`}
+        className={`container mx-auto flex justify-between items-center gap-3 transition-[height] duration-300 ${isScrolled ? "h-[48px] md:h-[64px]" : "h-[64px] md:h-[96px]"}`}
       >
         <Link href="/" className="block lg:hidden flex-shrink-0">
-          <Image src={LogoImg} width={45} alt="logo" />
+          <Image src={LogoImg} width={56} alt="logo" />
         </Link>
 
         <Link href="/" className="hidden lg:block">

@@ -12,6 +12,12 @@ body {
   background-color: var(--background-hex);
 }
 
+main {
+  section#home.dots-background-settings {
+    @apply bg-custom-small md:bg-custom-medium lg:bg-custom-large;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

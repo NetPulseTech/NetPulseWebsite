@@ -1,7 +1,7 @@
 <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
-     #Vector {
-      animation: moveDots 200s infinite alternate ;
+     <!-- #Vector {
+      animation: moveDots 300s infinite alternate;
       transform-origin: center;
     }
 
@@ -9,7 +9,7 @@
       0% { transform: rotate(0); }
       50% { transform: rotate(360deg); }
       100% { transform: rotate(0); }
-    }
+    } -->
   </style>
 <g id="Vector">
 

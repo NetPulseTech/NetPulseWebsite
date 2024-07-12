@@ -19,9 +19,19 @@ const config: Config = {
       backgroundImage: {
         dots: "url('/images/dots-background.svg')",
         "custom-radial-gradient":
-          "radial-gradient(50% 50% at 50% 50%, rgba(173, 26, 175, 0.3) 0%, rgba(20, 12, 31, 1) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(172, 26, 175, 0.3) 0%, rgba(20, 12, 31, 0.6) 100%)",
         "custom-linear-gradient":
           "linear-gradient(90deg, #794AB9 0%, #F81DFB 100%)",
+      },
+      backgroundSize: {
+        "custom-small": "494px",
+        "custom-medium": "754px",
+        "custom-large": "894px",
+      },
+      backgroundPosition: {
+        "custom-small": "center 28px",
+        "custom-medium": "center 35px",
+        "custom-large": "center 48px",
       },
     },
   },
