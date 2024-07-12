@@ -78,7 +78,7 @@ const Footer = () => {
             />
           </div>
 
-          <p className="font-normal text-sm py-[0.875rem]">{`© ${currentYear} Netpulse.com All rights reserved`}</p>
+          <p className="font-normal text-sm py-[0.875rem]">{`© ${currentYear} Netpulse.social - All rights reserved`}</p>
         </div>
       </div>
     </footer>
