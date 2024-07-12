@@ -23,6 +23,8 @@ const Main = () => {
         id="home"
         className="dots-background-settings relative w-full flex flex-col justify-center items-center h-[30.25rem] text-center mb-14 pt-20 bg-dots bg-bottom bg-no-repeat md:h-[48rem] lg:h-[56rem]"
       >
+        <div className="hidden md:block absolute md:top-[-100px] lg:top-[-180px] inset-x-0 mx-auto md:bg-custom-pink/60 lg:bg-custom-pink/70 md:blur-[200px] lg:blur-[300px] aspect-square md:h-[250px] lg:h-[360px]"></div>
+
         <div className="flex flex-col justify-center items-center w-[284px] aspect-square backdrop-blur-md bg-custom-radial-gradient rounded-full flex-shrink-0 md:w-[435px] lg:w-[525px] lg:mt-10">
           <div className="mb-3 lg:mb-6">
             <Image
@@ -62,7 +64,9 @@ const Main = () => {
           How do you work
         </h2>
 
-        <ul className="border-white/10 backdrop-blur-sm bg-white/10 border-2 rounded-3xl lg:flex lg:w-full lg:max-w-[1392px]s lg:mx-auto lg:rounded-[2.5rem]">
+        <ul className="relative border-white/10 backdrop-blur-sm bg-white/10 border-2 rounded-3xl lg:flex lg:w-full lg:max-w-[1392px]s lg:mx-auto lg:rounded-[2.5rem]">
+          <div className="absolute inset-x-0 top-1/2 mx-auto -translate-y-1/2 -z-10 bg-custom-pink/70 blur-[240px] aspect-square h-[300px]"></div>
+
           <li className="relative p-8 pt-9 lg:w-1/3 lg:mb-20 lg:mt-[7.5rem] lg:p-0">
             <span
               className={`${rajdhani.className} text-white/10 text-[2.5rem] font-semibold absolute left-5 top-2 lg:-top-[6.6rem] lg:left-8 lg:text-[4rem]`}
@@ -164,7 +168,7 @@ const Main = () => {
         </ul>
       </section>
 
-      <section id="benefits" className="text-center">
+      <section id="benefits" className="w-full text-center">
         <h2 className="font-bold text-[1.75rem] mb-6 lg:font-extrabold lg:text-[2.75rem] lg:mb-10">
           What is our benefit?
         </h2>
@@ -177,17 +181,22 @@ const Main = () => {
           </div>
         </div>
 
-        <p className="font-normal text-base max-w-[22rem] mx-auto mb-12 lg:text-xl lg:max-w-[60rem] lg:mb-[11.5rem]">
+        <p className="font-normal text-base max-w-[22rem] mx-auto  lg:text-xl lg:max-w-[60rem]">
           When you play, create a group, you can have your own token, this way
           both you and we become stronger, this is a win-win game.
         </p>
 
-        <div className="mb-12">
-          <div>
+        <div
+          className="mb-12 pt-12
+ lg:pt-[11.5rem] overflow-hidden"
+        >
+          <div className="relative border-b-2 border-white/10">
+            <div className="absolute inset-x-0 top-[90%] sm:top-2/3 mx-auto -z-10 bg-custom-pink/60 blur-[150px] md:blur-[180px] md:bg-custom-pink/70 aspect-square h-[180px] md:h-[250px] lg:h-[350px] lg:blur-[300px] lg:bg-custom-pink/80"></div>
+
             <Image
               src={CharacterImg}
               alt="girl character"
-              className="max-w-full md:hidden"
+              className="max-w-full md:hidden mx-auto scale-[.995]"
             />
 
             <Image
@@ -197,11 +206,11 @@ const Main = () => {
             />
           </div>
 
-          <div className="lg:mb-32">
+          <div className="lg:pb-32 bg-custom-dark">
             <Image
               src={CircleImg}
               alt="logos align as a circle"
-              className="max-w-full md:hidden"
+              className="max-w-full md:hidden mx-auto"
             />
 
             <Image
@@ -213,7 +222,7 @@ const Main = () => {
         </div>
       </section>
 
-      <section id="contact-us" className="text-center">
+      <section id="contact-us" className="text-center bg-custom-dark">
         <div>
           <p className="max-w-72 text-[1.375rem] font-semibold mx-auto text-center mb-5 lg:text-[2rem] lg:max-w-[44rem] lg:mb-10">
             To start, just connect your wallet to our token

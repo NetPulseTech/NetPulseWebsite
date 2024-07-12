@@ -8,9 +8,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="text-center mt-8 sm:p-5 lg:mt-[7.5rem] lg:p-10 sm:border-t-[1px] sm:border-white/10">
-      <div className="container sm:flex sm:justify-between sm:items-center sm:gap-5 lg:gap-6 mx-auto">
-        <ul className="flex justify-center items-center gap-4 py-7 border-y-[1px] border-white/10 sm:order-2 sm:border-0">
+    <footer className="relative text-center mt-8 sm:p-5 lg:mt-[7.5rem] lg:p-10 sm:border-t-[1px] sm:border-white/10">
+      <div className="container sm:flex sm:justify-between sm:items-center sm:gap-5 lg:gap-6 mx-auto ">
+        <div className="hidden md:block absolute inset-x-0 mx-auto bg-custom-pink/85 amd:bg-custom-pink/60 alg:bg-custom-pink/70 md:blur-[200px] lg:blur-[250px] bottom-0 w-[350px] h-4/6 rounded-t-full"></div>
+
+        <ul className="flex justify-center items-center gap-4 py-4 border-y-[1px] border-white/10 sm:order-2 sm:border-0">
           <li>
             <a href="#">
               <Image

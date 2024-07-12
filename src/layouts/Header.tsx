@@ -70,16 +70,24 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 p-5 z-10 mx-auto transition-colors border-b-[1px] duration-300 ${isScrolled ? " border-white/10 bg-custom-dark" : "border-custom-dark"}`}
+      className={`fixed inset-x-0 top-0 p-5 z-10 mx-auto transition-colors border-b-[1px] duration-300 ${isScrolled ? "border-white/10 bg-custom-dark" : "border-transparent"}`}
     >
       <div
         className={`container mx-auto flex justify-between items-center gap-3 transition-[height] duration-300 ${isScrolled ? "h-[48px] md:h-[64px]" : "h-[64px] md:h-[96px]"}`}
       >
-        <Link href="/" className="block lg:hidden flex-shrink-0">
+        <Link
+          href="/#home"
+          className="block lg:hidden flex-shrink-0"
+          onClick={(e) => handleNavLinkClick(e, "#home")}
+        >
           <Image src={LogoImg} width={56} alt="logo" />
         </Link>
 
-        <Link href="/" className="hidden lg:block">
+        <Link
+          href="/#home"
+          className="hidden lg:block"
+          onClick={(e) => handleNavLinkClick(e, "#home")}
+        >
           <Image src={NetPulse} width={152} alt="logo" />
         </Link>
 
