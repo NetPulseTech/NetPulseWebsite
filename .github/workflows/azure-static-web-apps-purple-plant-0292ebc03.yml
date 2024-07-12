@@ -25,7 +25,9 @@ jobs:
           node-version: '18.17.0'
       - name: Install Dependencies
         run: npm install
-      - name: Build And Deploy
+      - name: Build
+        run: npm run build
+      - name: Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -33,10 +35,9 @@ jobs:
           repo_token: ${{ secrets.GHRC_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
+          app_location: "out" # The output directory of your build
           api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
+          output_location: "out" # Built app content directory
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
