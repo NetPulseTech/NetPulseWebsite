@@ -77,10 +77,10 @@ const Header: React.FC = () => {
       >
         <Link
           href="/#home"
-          className="block lg:hidden flex-shrink-0"
+          className="flex justify-center items-center w-14 lg:hidden flex-shrink-0 bg-[#69106B] rounded-full aspect-square border-2 border-white/10"
           onClick={(e) => handleNavLinkClick(e, "#home")}
         >
-          <Image src={LogoImg} width={56} alt="logo" />
+          <Image src={LogoImg} alt="logo" className="mt-2" />
         </Link>
 
         <Link
@@ -91,23 +91,29 @@ const Header: React.FC = () => {
           <Image src={NetPulse} width={152} alt="logo" />
         </Link>
 
-        <nav className="text-lg font-semibold hidden md:block">
-          <ul className="flex gap-6">
-            <li>
+        <nav className="h-full text-lg font-semibold hidden md:block">
+          <ul className="flex gap-6 items-center h-full">
+            <li
+              className={`h-full flex items-center transition-colors duration-300 border-b-2 ${activeSection === "#home" ? "border-custom-green" : "border-transparent"}`}
+            >
               <Link
                 href="#home"
-                className={`transition-colors duration-300 ${activeSection === "#home" ? "text-custom-pink" : ""}`}
+                className={`transition-colors duration-300 ${activeSection === "#home" ? "text-custom-green" : "text-white"}`}
                 onClick={(e) => handleNavLinkClick(e, "#home")}
               >
                 Home
               </Link>
             </li>
 
-            <li>
+            <li
+              className={`h-full flex items-center transition-colors duration-300 border-b-2 ${activeSection === "#services" ? "border-custom-green" : "border-transparent"}`}
+            >
               <Link
                 href="#services"
                 className={`transition-colors duration-300 ${
-                  activeSection === "#services" ? "text-custom-pink" : ""
+                  activeSection === "#services"
+                    ? "text-custom-green"
+                    : "text-white"
                 }`}
                 onClick={(e) => handleNavLinkClick(e, "#services")}
               >
@@ -115,11 +121,15 @@ const Header: React.FC = () => {
               </Link>
             </li>
 
-            <li>
+            <li
+              className={`h-full flex items-center transition-colors duration-300 border-b-2 ${activeSection === "#benefits" ? "border-custom-green" : "border-transparent"}`}
+            >
               <Link
                 href="#benefits"
                 className={`transition-colors duration-300 ${
-                  activeSection === "#benefits" ? "text-custom-pink" : ""
+                  activeSection === "#benefits"
+                    ? "text-custom-green"
+                    : "text-white"
                 }`}
                 onClick={(e) => handleNavLinkClick(e, "#benefits")}
               >
@@ -127,11 +137,15 @@ const Header: React.FC = () => {
               </Link>
             </li>
 
-            <li>
+            <li
+              className={`h-full flex items-center transition-colors duration-300 border-b-2 ${activeSection === "#contact-us" ? "border-custom-green" : "border-transparent"}`}
+            >
               <Link
                 href="#contact-us"
                 className={`transition-colors duration-300 ${
-                  activeSection === "#contact-us" ? "text-custom-pink" : ""
+                  activeSection === "#contact-us"
+                    ? "text-custom-green"
+                    : "text-white"
                 }`}
                 onClick={(e) => handleNavLinkClick(e, "#contact-us")}
               >

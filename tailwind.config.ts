@@ -12,8 +12,6 @@ const config: Config = {
       colors: {
         "custom-pink": "#F81DFB",
         "custom-dark": "rgba(20, 12, 31, 1)",
-      },
-      backgroundColor: {
         "custom-green": "#96ea63",
       },
       backgroundImage: {
@@ -26,12 +24,15 @@ const config: Config = {
           "linear-gradient(90deg, #794AB9 0%, #F81DFB 100%)",
       },
       backgroundSize: {
-        "custom-small": "494px",
-        "custom-medium": "754px",
-        "custom-large": "894px",
+        "custom-small": "100%",
+        "custom-medium": "100%",
+        "custom-large": "100%",
+        // "custom-small": "494px",
+        // "custom-medium": "754px",
+        // "custom-large": "894px",
       },
       backgroundPosition: {
-        "custom-small": "center 28px",
+        "custom-small": "center 280px",
         "custom-medium": "center 35px",
         "custom-large": "center 48px",
       },
